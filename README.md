@@ -1,127 +1,152 @@
 # Geschichten-Atelier Website
 
-Eine moderne, responsive Website für Marion Zwoch - Freie Rednerin (IHK) für besondere Momente.
+Moderne, modulare Website für Marion Zwoch - Freie Rednerin (IHK) für besondere Momente in Berlin und Brandenburg.
 
-## 🌟 Features
+## Projektübersicht
 
-- **Moderne Design**: Zeitgemäßes, responsives Design mit sanften Animationen
-- **Mobile-First**: Optimiert für alle Geräte (Smartphone, Tablet, Desktop)
-- **Schnelle Ladezeiten**: Optimierte Performance und Assets
-- **SEO-Optimiert**: Suchmaschinenfreundliche Struktur
-- **Kontaktformular**: Mit Validierung und Benutzerfeedback
-- **Interaktive Elemente**: Smooth Scrolling, Hover-Effekte, Parallax
+Diese Website präsentiert die Dienstleistungen von Marion Zwoch mit Fokus auf:
+- **Freie Trauungen** (Hochzeiten & Eheerneuerungen)
+- **Trauerfeiern** (würdevolle Abschiedszeremonien)
+- **Kinderwillkommensfeste**
 
-## 🚀 Live Demo
+## Architektur
 
-Die Website läuft auf: **http://localhost:8000**
+Die Website ist **komponentenbasiert** aufgebaut - keine Datei überschreitet 150 Zeilen Code.
 
-## 📁 Projektstruktur
+### Struktur
 
 ```
 geschichten-atelier-website/
-├── index.html              # Hauptseite
+├── index.html                      # Haupt-HTML (nur 54 Zeilen!)
+├── components/
+│   ├── html/                       # HTML-Komponenten
+│   │   ├── navigation.html         # Navigation & Logo
+│   │   ├── hero.html              # Hero mit Path-Selection & Audio
+│   │   ├── about.html             # Über-mich-Sektion
+│   │   ├── services-wedding.html  # Hochzeit/Eheerneuerung
+│   │   ├── services-memorial.html # Trauerfeier/Kinderfest
+│   │   ├── instagram-feed.html    # Instagram Integration
+│   │   ├── contact.html           # Kontaktformular
+│   │   └── footer.html            # Footer mit Links
+│   └── js/                        # JavaScript-Module
+│       ├── component-loader.js    # Lädt alle Komponenten
+│       ├── navigation.js          # Navigation & Scroll
+│       ├── path-selection.js      # Theme-Wechsel (Hochzeit/Trauer)
+│       ├── accordion.js           # Service-Details
+│       ├── contact-form.js        # Formular-Handling
+│       └── scroll-animations.js   # Scroll-Animationen
 ├── assets/
 │   ├── css/
-│   │   └── style.css       # Styles und Responsive Design
+│   │   └── style.css              # Alle Styles mit Themes
 │   ├── js/
-│   │   └── script.js       # Interaktive Funktionen
-│   └── images/             # Bilder und Medien
-│       ├── ceremony-1.jpg  # Zeremonie-Bilder
-│       ├── ceremony-2.jpg
-│       ├── ceremony-3.jpg
-│       ├── ceremony-4.jpg
-│       ├── marion-hero.jpg # Marion's Profilbilder
-│       └── marion-about.jpg
-└── README.md               # Diese Datei
+│   │   └── script.js              # (Legacy - nicht mehr verwendet)
+│   ├── images/                    # Bilder
+│   └── audio/
+│       └── hoerprobe.mp3          # Audio-Probe
+└── README.md
 ```
 
-## 🎨 Design-Highlights
+## Features
 
-### Farbpalette
-- **Primär**: Lineare Gradienten (#667eea → #764ba2)
-- **Akzente**: Warme Blautöne und sanfte Grautöne
-- **Hintergründe**: Sanfte Farbverläufe für moderne Optik
+### 1. Path-basiertes Theme-System
+- **Hochzeit-Theme**: Rosa/Rot Farbschema
+- **Trauer-Theme**: Blau/Grün Farbschema
+- Dynamischer Theme-Wechsel ohne Page-Reload
 
-### Typografie
-- **Hauptfont**: Inter (saubere, moderne Sans-Serif)
-- **Überschriften**: Playfair Display (elegante Serif)
+### 2. Komponenten-System
+- Jede Komponente ist unabhängig
+- Maximale Wartbarkeit
+- Einfaches Hinzufügen neuer Sektionen
 
-### Sektionen
-1. **Hero-Bereich**: Emotionale Begrüßung mit USPs
-2. **Über mich**: Persönliche Geschichte und Qualifikationen
-3. **Leistungen**: Detaillierte Service-Beschreibungen
-4. **Preise**: Transparente Preisgestaltung
-5. **Referenzen**: Echte Kundenbewertungen
-6. **Galerie**: Eindrucksvolle Zeremonie-Bilder
-7. **Kontakt**: Formular und Kontaktdaten
+### 3. Ehrliche Kommunikation
+- **Keine künstliche Verknappung**
+- **Keine fake Testimonials**
+- Transparente Preisangaben
+- Echter Instagram-Feed als Social Proof
 
-## 🛠 Technische Details
+### 4. Mobile-First Design
+- Vollständig responsive
+- Touch-optimierte Navigation
+- Schnelle Ladezeiten
 
-- **HTML5**: Semantische Struktur
-- **CSS3**: Moderne Features (Grid, Flexbox, Animationen)
-- **Vanilla JavaScript**: Keine Abhängigkeiten
-- **Responsive Design**: Mobile-First Ansatz
-- **Barrierefreiheit**: WCAG-konforme Elemente
+## Farbpalette
 
-## 📱 Responsive Breakpoints
+### Neutral
+- `--primary-neutral: #8b7355` (Braun)
+- `--text-dark: #2c3e50` (Dunkelgrau)
+- `--text-light: #5a6c7d` (Hellgrau)
 
-- **Desktop**: 1200px+
-- **Tablet**: 768px - 1199px
-- **Mobile**: 320px - 767px
+### Hochzeit (Rosa/Rot)
+- `--primary-wedding: #d94e7c`
+- `--secondary-wedding: #e6798f`
+- `--light-wedding: #f7e1e8`
 
-## 🎯 USPs (Unique Selling Points)
+### Trauerfeier (Blau/Grün)
+- `--primary-memorial: #4a7c8c`
+- `--secondary-memorial: #6b9da8`
+- `--light-memorial: #dce9ec`
 
-- ✅ Unbegrenztes Vorgespräch
-- ✅ Komplette Prozessbegleitung
-- ✅ 100% Preis-zurück-Garantie
-- ✅ IHK-zertifizierte Rednerin
-- ✅ 24-Stunden Rückmeldegarantie
+## Entwicklung
 
-## 🚀 Deployment
+### Lokaler Server starten
 
-### Lokaler Server (Entwicklung)
 ```bash
-# Node.js Server (läuft bereits)
-node -e "const http=require('http');const fs=require('fs');const path=require('path');const server=http.createServer((req,res)=>{let filePath='.'+req.url;if(filePath==='./')filePath='./index.html';const extname=path.extname(filePath);const mimeTypes={'.html':'text/html','.css':'text/css','.js':'text/javascript','.jpg':'image/jpeg','.png':'image/png'};const contentType=mimeTypes[extname]||'application/octet-stream';fs.readFile(filePath,(error,content)=>{if(error){res.writeHead(404);res.end('File not found');}else{res.writeHead(200,{'Content-Type':contentType});res.end(content);}});});server.listen(8000,()=>console.log('Server running at http://localhost:8000'));"
-
-# Alternative mit Python
-python -m http.server 8000
-
-# Alternative mit npm
+# Empfohlen: http-server
 npx http-server -p 8000
+
+# Alternative: Node.js
+node -e "const http=require('http');..."
+
+# Alternative: Python
+python -m http.server 8000
 ```
 
-### Produktion
-Für das Live-System:
-1. Bilder durch echte Fotos ersetzen
-2. Kontaktformular-Backend integrieren
-3. Domain und Hosting einrichten
-4. SSL-Zertifikat hinzufügen
-5. Analytics implementieren
+Dann öffnen: **http://localhost:8000**
 
-## 📞 Kontaktinformationen
+### Komponente bearbeiten
 
-**Marion Zwoch**  
-Freie Rednerin (IHK)  
-Berlin & Brandenburg  
+1. HTML-Komponente in `components/html/` bearbeiten
+2. Seite neu laden - Komponente wird automatisch geladen
+3. Keine Build-Schritte notwendig!
 
-📧 info@geschichten-atelier.de  
-📱 +49 (0) 123 456 789  
+### Neue Komponente hinzufügen
 
-## 🔄 Updates und Wartung
+1. HTML-Datei in `components/html/` erstellen
+2. In `components/js/component-loader.js` registrieren:
+   ```javascript
+   { path: 'components/html/neue-komponente.html', target: 'neue-komponente' }
+   ```
+3. Container in `index.html` einfügen:
+   ```html
+   <div id="neue-komponente"></div>
+   ```
 
-- **Bilder**: Platzhalter in `/assets/images/` durch echte Fotos ersetzen
-- **Texte**: Inhalte in `index.html` anpassen
-- **Styling**: CSS in `/assets/css/style.css` modifizieren
-- **Funktionen**: JavaScript in `/assets/js/script.js` erweitern
+## Technologie-Stack
 
-## 📈 Performance-Optimierung
+- **HTML5** - Semantisches Markup
+- **CSS3** - Grid, Flexbox, Custom Properties
+- **Vanilla JavaScript** - Keine Frameworks
+- **Google Fonts** - Inter & Playfair Display
+- **Font Awesome 6** - Icons
 
-- Bilder komprimieren und optimieren
-- CSS und JavaScript minimieren
-- CDN für Fonts und Bibliotheken nutzen
-- Lazy Loading für Bilder implementieren
+## Kontakt
+
+**Marion Zwoch**
+Freie Rednerin (IHK)
+
+- Telefon/WhatsApp: [0178 1873022](tel:+491781873022)
+- E-Mail: [info@geschichten-atelier.de](mailto:info@geschichten-atelier.de)
+- Instagram: [@geschichtenatelier](https://www.instagram.com/geschichtenatelier/)
+- Region: Berlin & Brandenburg
+
+## Prinzipien
+
+✅ **Keine Quickfixes - nur saubere Lösungen**
+✅ **Ehrliche Kommunikation - keine künstliche Verknappung**
+✅ **Modular - keine Datei > 150 Zeilen**
+✅ **Performance - schnelle Ladezeiten**
+✅ **Wartbarkeit - verständlicher Code**
 
 ---
 
-*Erstellt mit ❤️ für Marion Zwoch und ihr wundervolles Geschichten-Atelier*
+*Entwickelt mit Claude Code - Fokus auf Klarheit, Wartbarkeit und ehrliche Kommunikation.*

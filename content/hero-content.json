@@ -1,0 +1,112 @@
+{
+  "badge": {
+    "icon": "fa-certificate",
+    "text": "IHK-zertifizierte Rednerin"
+  },
+  "title": {
+    "normal": "Hallo, ich bin ",
+    "highlight": "Marion",
+    "subtitle": "vom Geschichten-Atelier"
+  },
+  "subtitle": "Freie Rednerin für Ihre besonderen Momente",
+  "description": "Ich freue mich sehr, dass Sie auf meine Seite schauen und ich mich bei Ihnen vorstellen darf. Ob Hochzeit oder Trauerfeier – ich finde die richtigen Worte für Ihren besonderen Anlass.",
+  "tabs": {
+    "about": {
+      "tabTitle": "Über mich",
+      "tabIcon": "fa-user",
+      "intro": "<strong>Ich bin ich – so wie ich bin – mit allen Ecken und Kanten, Schwächen und Macken... aber auch mit vielen Stärken!</strong>",
+      "mainText": "Denn... ich bin ECHT, HERZLICH, LIEBEVOLL, EMPATHISCH, FÜRSORGLICH und ZUVERLÄSSIG! Ich bin authentisch und keine Schauspielerin – ich bin FREIE REDNERIN und ich liebe diesen Beruf, der für mich wohl eher eine Berufung ist.",
+      "accordionTitle": "Mehr über mich erfahren",
+      "expandedContent": {
+        "paragraphs": [
+          "Mein Name ist Marion Zwoch und ich bin geboren und aufgewachsen in Berlin Zehlendorf. Seit vielen Jahren wohne ich nun mit meinem Mann in Steglitz. Wir haben eine erwachsene Tochter und einen ganz niedlichen Enkelhund.",
+          "Geschichten liebt jeder und ich darf hoffentlich ganz tief in eure ganz eigenen Geschichten eintauchen. Hineinschauen dürfen in eine Schatzkiste mit den größten Geheimnissen - ich weiß, das ist ein ziemlich großer Vertrauensvorschuss und ich bin sehr dankbar dafür.",
+          "Aus euren Erzählungen, aber auch aus vielem ungesagten, was zwischen den Zeilen zu hören ist eine ganz individuelle Rede zu erschaffen, das ist meine Kunst... und Kunst entsteht in einem Atelier. So war der Name geboren.",
+          "Ich habe schon immer mit Menschen gearbeitet und mich in meiner Freizeit viel mit Geschichten, Wörtern und Buchstaben beschäftigt. Dann habe ich mit Ü 50 beschlossen, mich nochmal neu zu orientieren, meine Berufung zum Beruf zu machen und eine Ausbildung (mit IHK Abschluss) zur FREIEN REDNERIN gemacht."
+        ],
+        "factsTitle": "Einige Fakten über mich:",
+        "facts": [
+          {
+            "title": "Geschichten hören, lesen, schreiben",
+            "text": "Perfect Match! Ich höre nicht nur gerne zu, sondern ich beschäftige mich auch mit den Menschen dahinter."
+          },
+          {
+            "title": "Termine ab 10:00 Uhr",
+            "text": "bevorzugt – ich bin eher eine Nachteule als Frühaufsteher."
+          },
+          {
+            "title": "Strukturiert & perfektionistisch",
+            "text": "wenn es darauf ankommt, dann bin ich total on point."
+          },
+          {
+            "title": "Modebranche-Erfahrung",
+            "text": "Stile, Farben und Muster ziehen mich magisch an."
+          },
+          {
+            "title": "Enkelhund Chico",
+            "text": "hat mein Herz im Sturm erobert."
+          },
+          {
+            "title": "Ich glaube an die wahre Liebe!",
+            "text": "Mehr als die Hälfte meines Lebens steht mein Mann wie ein Fels in der Brandung an meiner Seite."
+          }
+        ]
+      },
+      "highlights": [
+        { "icon": "fa-certificate", "text": "IHK-zertifiziert" },
+        { "icon": "fa-map-marker-alt", "text": "Berlin & Brandenburg" },
+        { "icon": "fa-heart", "text": "Persönlich & empathisch" }
+      ]
+    },
+    "process": {
+      "tabTitle": "Wie ich arbeite",
+      "tabIcon": "fa-handshake",
+      "intro": "<strong>Jede Zeremonie ist einzigartig – genau wie Ihre Geschichte.</strong>",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Kennenlernen",
+          "text": "Kostenloses, unverbindliches Gespräch – finden wir zueinander?"
+        },
+        {
+          "number": 2,
+          "title": "Ihre Geschichte",
+          "text": "Ausführliches Gespräch über Sie, Ihre Wünsche und Vorstellungen"
+        },
+        {
+          "number": 3,
+          "title": "Individuelle Rede",
+          "text": "Ich erschaffe eine einzigartige Rede – nur für Sie"
+        },
+        {
+          "number": 4,
+          "title": "Ihr besonderer Tag",
+          "text": "Professionelle Durchführung der Zeremonie"
+        }
+      ]
+    }
+  },
+  "pathSelection": {
+    "title": "Für welchen Anlass suchen Sie eine Rednerin?",
+    "paths": [
+      {
+        "type": "wedding",
+        "icon": "fa-heart",
+        "title": "Freie Trauung",
+        "subtitle": "Hochzeit & Eheerneuerung"
+      },
+      {
+        "type": "memorial",
+        "icon": "fa-dove",
+        "title": "Trauerfeier",
+        "subtitle": "Abschied mit Würde und Wärme"
+      }
+    ]
+  },
+  "audioSample": {
+    "title": "Hörprobe",
+    "icon": "fa-volume-up",
+    "audioFile": "assets/audio/hoerprobe.mp3",
+    "fallbackText": "Ihr Browser unterstützt das Audio-Element nicht."
+  }
+}

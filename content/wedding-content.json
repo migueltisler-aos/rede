@@ -1,0 +1,169 @@
+{
+  "intro": {
+    "title": "Freie Trauung & Eheerneuerung",
+    "subtitle": "Eure Liebe verdient die schönsten Worte",
+    "paragraphs": [
+      "<strong>Wie schön, dass Ihr Euch gefunden habt und nun mit einer freien Trauung Eure Liebe besiegeln wollt!</strong>",
+      "Wenn aus Eurem DU + ICH ein WIR geworden ist und aus Euren zwei getrennten Leben nun ein gemeinsames werden soll, dann kann man kaum erwarten, dass der Rest des Lebens so schnell wie möglich beginnt.",
+      "Lasst Euch von meiner Rede überraschen und erlebt Eure Liebesgeschichte in Worten, die in Erinnerung bleiben. Meine Reden sind individuell und kreativ, immer würdevoll, aber nicht steif; humorvoll, aber nicht albern; romantisch, ohne dabei kitschig zu sein."
+    ]
+  },
+  "services": [
+    {
+      "id": "freie-trauung",
+      "icon": "fa-heart",
+      "title": "Freie Trauung",
+      "price": "ab 980,- Euro",
+      "toggleText": "Details anzeigen",
+      "content": {
+        "intro": [
+          "Eine freie Trauung bedeutet die Freiheit für eine ganz persönliche und komplett individuelle Zeremonie. Alles soll Euren Vorstellungen und Wünschen entsprechen, so dass es zu 100% zu Euch und Eurem Anlass passt.",
+          "<strong>Alles kann, nichts muss!</strong>"
+        ],
+        "included": {
+          "title": "Was ist enthalten:",
+          "items": [
+            "Unverbindliches, kostenloses Kennenlerngespräch",
+            "Ausführliches Detailgespräch über Eure Geschichte",
+            "Individuelle Rede – nur für Euch erschaffen",
+            "Beratung bei Ritualen (Sandritual, Ringsegenabschnitt, etc.)",
+            "Eigene Tontechnik inklusive",
+            "Professionelle Durchführung der Zeremonie"
+          ]
+        },
+        "priceNote": "* Preis inkl. 19% USt., zzgl. Fahrtkostenpauschale: 30€ bis 30 km, darüber 0,40€/km"
+      }
+    },
+    {
+      "id": "weg-zeremonie",
+      "icon": "fa-route",
+      "title": "Der Weg zur Zeremonie",
+      "toggleText": "Wie es abläuft",
+      "content": {
+        "heading": "So werde ich eure Rednerin:",
+        "timeline": [
+          {
+            "number": 1,
+            "title": "Anfrage",
+            "text": "Egal ob per Telefon, E-Mail, WhatsApp oder Instagram. Wir klären ob euer Wunschtermin noch frei ist und ich schicke euch mein Angebot zu."
+          },
+          {
+            "number": 2,
+            "title": "Kennenlerngespräch",
+            "text": "Ganz unverbindlich und kostenlos. Wir finden heraus ob wir zueinander passen und ob ihr euch mit mir als eure Rednerin wohlfühlen würdet."
+          },
+          {
+            "number": 3,
+            "title": "Vertrag & Reservierung",
+            "text": "Wenn ihr mir euer erstes „JA" gegeben habt, reserviere ich euren Termin. Vertrag und Anzahlung folgen."
+          },
+          {
+            "number": 4,
+            "title": "Detailplanung",
+            "text": "Ihr erzählt mir alles über euch, eure Liebe und Verbundenheit. Ich nehme mir viel Zeit, um alles über euch herauszufinden. Rituale? Sehr gerne!"
+          },
+          {
+            "number": 5,
+            "title": "Rede erschaffen",
+            "text": "Im Geschichten-Atelier erschaffe ich eure ganz individuelle und persönliche Rede. Einzigartig nur auf euch zugeschnitten."
+          },
+          {
+            "number": 6,
+            "title": "Euer großer Tag!",
+            "text": "Ich bereite alles vor. Ihr lehnt euch zurück und genießt gemeinsam mit euren Herzensmenschen diesen besonderen Moment."
+          }
+        ]
+      }
+    },
+    {
+      "id": "beispiel-ablauf",
+      "icon": "fa-list-check",
+      "title": "Beispiel-Ablauf",
+      "toggleText": "So könnte Eure Trauung ablaufen",
+      "content": {
+        "intro": "Wie der Name „Freie Trauung" schon sagt, ist die Gestaltung völlig frei und individuell möglich. Es gibt keine Vorgaben oder Vorschriften. Hier ein Beispiel wie es sein könnte:",
+        "sections": [
+          {
+            "title": "Vorbereitung (1 Stunde vor Beginn)",
+            "text": "Ich treffe früh ein, checke ob alles hergerichtet ist, baue meine Technik auf und stimme mich auf euren großen Moment ein."
+          },
+          {
+            "title": "Gäste-Ankunft",
+            "items": [
+              { "icon": "fa-music", "text": "Hintergrundmusik (DJ, live oder eigene Musik)" },
+              { "icon": "fa-glass-water", "text": "Erfrischungen für Gäste (besonders an heißen Tagen)" },
+              { "icon": "fa-umbrella", "text": "Sonnenschutz & Regenalternative einplanen" }
+            ]
+          },
+          {
+            "title": "Einzug",
+            "text": "Der stimmungsvollste Moment! Möglichkeiten:",
+            "items": [
+              "Als Paar gemeinsam einlaufen",
+              "Als Familie mit Kindern",
+              "Klassisch: Er wartet, sie kommt (alleine oder begleitet)",
+              "Signal: Kind/Hund mit Schild, oder Musik wird lauter"
+            ]
+          },
+          {
+            "title": "Die Zeremonie (40-60 Minuten)",
+            "items": [
+              { "icon": "fa-microphone", "text": "Begrüßung und Einführung" },
+              { "icon": "fa-book-heart", "text": "Die Rede mit eurer Geschichte" },
+              { "icon": "fa-music", "text": "Besonderes Lied (optional)" },
+              { "icon": "fa-hands-holding-heart", "text": "Rituale (Ringsegnung, Sandritual, etc.)" },
+              { "icon": "fa-heart", "text": "Eheversprechen" },
+              { "icon": "fa-question", "text": "Traufrage: „JA - ICH WILL"" },
+              { "icon": "fa-ring", "text": "Ringtausch" },
+              { "icon": "fa-kiss", "text": "Der ersehnte Kuss" },
+              { "icon": "fa-signature", "text": "Trauurkunde unterzeichnen" }
+            ]
+          },
+          {
+            "title": "Auszug",
+            "text": "Fröhliche Musik, optional Blumenkinder mit Konfetti. Dann: Umarmungen, Sektempfang, Party!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "eheerneuerung",
+      "icon": "fa-infinity",
+      "title": "Eheerneuerung",
+      "price": "ab 980,- Euro",
+      "toggleText": "Ein zweites JA",
+      "content": {
+        "intro": [
+          "<strong>Ihr wünscht euch ein zweites JA? Wunderbar – Ich bin dabei!</strong>",
+          "Was kann es schöneres geben, als sich auch nach vielen Jahren einer Ehe immer noch ganz sicher zu sein: Ich würde immer wieder JA zu dir sagen!",
+          "Wahre Liebe kennt kein Alter und keine Zeit... ob nach 5, 10, 25 oder 50 Jahren - wenn ihr eure Liebe feiern möchtet, ist es eine schöne Idee das Eheversprechen zu erneuern!"
+        ],
+        "options": {
+          "title": "Eure Möglichkeiten:",
+          "items": [
+            { "icon": "fa-home", "text": "Im heimischen Garten" },
+            { "icon": "fa-utensils", "text": "Im Lieblingsrestaurant" },
+            { "icon": "fa-crown", "text": "Feierlich in einem Schloss" },
+            { "icon": "fa-ship", "text": "Auf einem Schiff" },
+            { "icon": "fa-heart", "text": "Oder wo auch immer euer Herz am höchsten schlägt" }
+          ]
+        },
+        "styles": {
+          "title": "Gestaltung:",
+          "items": [
+            "Ganz intim zu zweit",
+            "Mit engsten Herzensmenschen",
+            "Oder ein richtiges großes Fest"
+          ]
+        },
+        "closing": "<em>Euer Eheversprechen zu wiederholen ist nicht nur eine schöne Geste der Liebe und Treue, sondern es stärkt auch das Band zwischen euch beiden. Es ist ein Beweis dafür, dass trotz aller Herausforderungen des Lebens, eure Liebe die Zeit überdauert hat!</em>"
+      }
+    }
+  ],
+  "cta": {
+    "title": "Lasst mich EURE Geschichte erzählen!",
+    "subtitle": "Ich freue mich darauf, euch kennenzulernen.",
+    "buttonText": "Jetzt Kontakt aufnehmen",
+    "buttonIcon": "fa-phone"
+  }
+}

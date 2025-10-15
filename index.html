@@ -4,302 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geschichten-Atelier - Marion Zwoch | Freie Rednerin für besondere Momente</title>
-    <meta name="description" content="Professionelle freie Rednerin (IHK) für Hochzeiten, Trauerfeiern und besondere Anlässe in Berlin und Brandenburg.">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="description" content="Freie Rednerin (IHK) für Hochzeiten, Trauerfeiern und besondere Anlässe in Berlin und Brandenburg. Authentisch, herzlich und professionell.">
+
+    <!-- Fonts - Elegant & Modern -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h2>Geschichten-Atelier</h2>
-                <span class="nav-subtitle">Marion Zwoch</span>
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link active">Startseite</a>
-                <a href="#about" class="nav-link">Über mich</a>
-                <a href="#services" class="nav-link">Leistungen</a>
-                <a href="#contact" class="nav-link">Kontakt</a>
-            </div>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
+    <!-- Navigation Component -->
+    <div id="nav-component"></div>
 
-    <!-- Hero Section with Path Selection -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <i class="fas fa-certificate"></i>
-                    <span>IHK-zertifizierte Rednerin</span>
-                </div>
-                <h1 class="hero-title">
-                    Ihre <span class="highlight">persönliche Zeremonie</span><br>
-                    beginnt mit den richtigen Worten
-                </h1>
-                <p class="hero-subtitle">Emotionale Reden für Ihre besonderen Momente</p>
-                <p class="hero-description">
-                    Als freie Rednerin gestalte ich individuelle Zeremonien, die Ihre einzigartige Geschichte erzählen – mit Einfühlungsvermögen, Professionalität und Herz.
-                </p>
+    <!-- Hero Component -->
+    <div id="hero-component"></div>
 
-                <!-- Path Selection -->
-                <div class="path-selection">
-                    <h3>Für welchen Anlass suchen Sie eine Rednerin?</h3>
-                    <div class="path-buttons">
-                        <button class="path-btn wedding-path" onclick="selectPath('wedding')">
-                            <i class="fas fa-heart"></i>
-                            <span>Freie Trauung</span>
-                            <p>Hochzeit, Eheerneuerung & Liebesfeste</p>
-                        </button>
-                        <button class="path-btn memorial-path" onclick="selectPath('memorial')">
-                            <i class="fas fa-dove"></i>
-                            <span>Trauerfeier</span>
-                            <p>Abschied mit Würde und Wärme</p>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="assets/images/marion-hero.jpg" alt="Marion Zwoch - Freie Rednerin" class="hero-img">
-            </div>
-        </div>
-    </section>
+    <!-- About Component -->
+    <div id="about-component"></div>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-container">
-                <div class="about-image">
-                    <img src="assets/images/marion-about.jpg" alt="Marion Zwoch" class="about-img">
-                </div>
-                <div class="about-content">
-                    <h2 class="section-title">Über mich</h2>
-                    <div class="about-text">
-                        <p>
-                            Als zertifizierte freie Rednerin (IHK) widme ich mich mit großer Leidenschaft
-                            der Gestaltung einzigartiger Zeremonien. Jede Geschichte, die ich erzählen darf,
-                            berührt mich persönlich und wird mit viel Einfühlungsvermögen und Kreativität
-                            zu einem unvergesslichen Erlebnis.
-                        </p>
-                        <p>
-                            Meine langjährige Erfahrung und kontinuierliche Weiterbildung ermöglichen es mir,
-                            sowohl freudige als auch schwere Momente würdevoll zu begleiten. Ob Hochzeit oder
-                            Abschied – ich finde die richtigen Worte für Ihren besonderen Anlass.
-                        </p>
-                    </div>
-                    <div class="about-highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-certificate"></i>
-                            <span>IHK-zertifizierte Ausbildung</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Berlin & Brandenburg</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-heart"></i>
-                            <span>Persönlich & empathisch</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Wedding Services Component -->
+    <div id="services-wedding-component"></div>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2 class="section-title">Meine Leistungen</h2>
-            <p class="section-subtitle">Individuelle Zeremonien für Ihre wichtigsten Momente</p>
+    <!-- Memorial Services Component -->
+    <div id="services-memorial-component"></div>
 
-            <div class="services-grid">
-                <!-- Wedding Services -->
-                <div class="service-card wedding-theme">
-                    <div class="service-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <h3>Freie Trauung</h3>
-                    <button class="accordion-toggle">
-                        <span>Details anzeigen</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="accordion-content">
-                        <p>Ihre Hochzeit, Ihre Regeln. Gestalten Sie Ihre Traumzeremonie genau so, wie Sie es sich vorstellen:</p>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Persönliches Kennenlerngespräch</li>
-                            <li><i class="fas fa-check"></i> Individuelle Rede mit Ihrer Geschichte</li>
-                            <li><i class="fas fa-check"></i> Flexible Rituale und Gestaltung</li>
-                            <li><i class="fas fa-check"></i> Professionelle Vorbereitung und Durchführung</li>
-                        </ul>
-                    </div>
-                </div>
+    <!-- Instagram Component -->
+    <div id="instagram-component"></div>
 
-                <div class="service-card wedding-theme">
-                    <div class="service-icon">
-                        <i class="fas fa-rings-wedding"></i>
-                    </div>
-                    <h3>Eheerneuerung</h3>
-                    <button class="accordion-toggle">
-                        <span>Details anzeigen</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="accordion-content">
-                        <p>Feiern Sie Ihre Liebe und gemeinsame Reise mit einer bewegenden Zeremonie:</p>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Würdigung Ihrer gemeinsamen Geschichte</li>
-                            <li><i class="fas fa-check"></i> Erneuerung des Eheversprechens</li>
-                            <li><i class="fas fa-check"></i> Einbeziehung von Familie und Freunden</li>
-                            <li><i class="fas fa-check"></i> Besondere Rituale für Paare</li>
-                        </ul>
-                    </div>
-                </div>
+    <!-- Contact Component -->
+    <div id="contact-component"></div>
 
-                <!-- Memorial Services -->
-                <div class="service-card memorial-theme">
-                    <div class="service-icon">
-                        <i class="fas fa-dove"></i>
-                    </div>
-                    <h3>Trauerfeier</h3>
-                    <button class="accordion-toggle">
-                        <span>Details anzeigen</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="accordion-content">
-                        <p>Ein würdevoller Abschied, der das Leben des Verstorbenen ehrt:</p>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Einfühlsames Vorgespräch mit Angehörigen</li>
-                            <li><i class="fas fa-check"></i> Würdige Trauerrede über das Leben</li>
-                            <li><i class="fas fa-check"></i> Raum für Erinnerungen und Emotionen</li>
-                            <li><i class="fas fa-check"></i> Tröstende und respektvolle Begleitung</li>
-                        </ul>
-                    </div>
-                </div>
+    <!-- Footer Component -->
+    <div id="footer-component"></div>
 
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3>Besondere Anlässe</h3>
-                    <button class="accordion-toggle">
-                        <span>Details anzeigen</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="accordion-content">
-                        <p>Weitere Zeremonien für besondere Momente im Leben:</p>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Willkommensfeste für Kinder</li>
-                            <li><i class="fas fa-check"></i> Jubiläumsfeiern</li>
-                            <li><i class="fas fa-check"></i> Geburtstage mit Zeremonie</li>
-                            <li><i class="fas fa-check"></i> Individuelle Rituale nach Wunsch</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-container">
-                <div class="contact-content">
-                    <h2 class="section-title">Kontakt aufnehmen</h2>
-                    <p class="section-subtitle">Lassen Sie uns gemeinsam Ihre Geschichte erzählen</p>
-
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Telefon</h4>
-                                <a href="tel:+49123456789">+49 (0) 123 456 789</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>E-Mail</h4>
-                                <a href="mailto:info@geschichten-atelier.de">info@geschichten-atelier.de</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Region</h4>
-                                <span>Berlin & Brandenburg</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contact-form">
-                    <form id="contact-form">
-                        <div class="form-group">
-                            <label for="name">Name *</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">E-Mail *</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Telefon</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-                        <div class="form-group">
-                            <label for="service">Gewünschte Leistung</label>
-                            <select id="service" name="service">
-                                <option value="">Bitte wählen</option>
-                                <option value="freie-trauung">Freie Trauung</option>
-                                <option value="trauerfeier">Trauerfeier</option>
-                                <option value="eheerneuerung">Eheerneuerung</option>
-                                <option value="besondere-anlaesse">Besondere Anlässe</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Ihre Nachricht *</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Nachricht senden</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Geschichten-Atelier</h3>
-                    <p>Marion Zwoch<br>Freie Rednerin (IHK)</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Kontakt</h3>
-                    <p>
-                        <a href="tel:+49123456789">+49 (0) 123 456 789</a><br>
-                        <a href="mailto:info@geschichten-atelier.de">info@geschichten-atelier.de</a>
-                    </p>
-                </div>
-                <div class="footer-section">
-                    <h3>Region</h3>
-                    <p>Berlin & Brandenburg</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Geschichten-Atelier - Marion Zwoch. Alle Rechte vorbehalten.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="assets/js/script.js"></script>
+    <!-- Scripts -->
+    <script src="components/js/content-renderer.js"></script>
+    <script src="components/js/navigation.js"></script>
+    <script src="components/js/tabs.js"></script>
+    <script src="components/js/path-selection.js"></script>
+    <script src="components/js/accordion.js"></script>
+    <script src="components/js/contact-form.js"></script>
+    <script src="components/js/scroll-animations.js"></script>
+    <script src="components/js/component-loader.js"></script>
 </body>
 </html>

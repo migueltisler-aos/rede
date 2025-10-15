@@ -1,0 +1,134 @@
+{
+  "intro": {
+    "title": "Trauerfeier & Abschied",
+    "subtitle": "Würdevoll Abschied nehmen",
+    "paragraphs": [
+      "Wahrscheinlich befinden Sie sich gerade in einem sehr schweren Abschnitt Ihres Lebens. Ein Moment der mit Verlust und Schmerz einhergeht.",
+      "Das tut mir sehr leid und ich möchte Ihnen dazu erst einmal meine <strong>Anteilnahme</strong> aussprechen.",
+      "Zu jedem Abschnitt kann man ganz persönliche, individuelle aber auch ganz würdevolle Zeremonien erschaffen. Darum hat es auch jeder Moment des Lebens verdient fürsorglich, herzlich, aber vor allem würdevoll betrachtet zu werden."
+    ]
+  },
+  "services": [
+    {
+      "id": "trauerfeier",
+      "icon": "fa-dove",
+      "title": "Trauerfeier",
+      "price": "ab 380,- Euro",
+      "toggleText": "Details anzeigen",
+      "content": {
+        "intro": [
+          "Das Leben besteht aus verschiedenen Abschnitten: Einem Anfang, einem Mittelteil und einem Ende. Immer mehr Menschen wünschen sich zum Abschied eines geliebten Menschen eine(n) Redner*in, die eine individuelle Zeremonie leitet und eine sehr persönliche Rede über den Verstorbenen hält.",
+          "Das Leben ist so vielfältig und einzigartig. Durch ein tiefgehendes persönliches Vorgespräch möchte ich den verstorbenen Menschen kennenlernen, um zu verstehen was sie/ihn ausgemacht hat und was die Besonderheiten waren."
+        ],
+        "approach": {
+          "title": "Mein Ansatz:",
+          "items": [
+            "Gemeinsam lassen wir im Gespräch das Leben Revue passieren und die schönsten Momente noch einmal aufleben",
+            "Dabei darf ich einen Blick in die Schatztruhe des Lebens werfen und die Schätze des Lebens heben",
+            "Jeder Mensch hat seine eigenen und ganz einzigartigen Geschichten",
+            "Vielleicht gibt es auch noch etwas ungesagtes, was aber doch noch ausgesprochen werden soll?! Auch dafür gibt es einen Platz in meiner Rede",
+            "Mir ist es ein ganz großes Anliegen Räume zu schaffen, in denen jeder einzelne erreicht wird"
+          ]
+        },
+        "promise": "<em>Ich möchte Sie durch diese schweren Stunden führen, Ihnen Trost und Hoffnung schenken und ermutigend zur Seite stehen. Die Einzigartigkeit eines jeden Menschen lassen mich eine Rede erschaffen, die zwar eine Abschiedsrede, aber eher eine Rede über das Leben als eine Trauerrede sein sollte.</em>",
+        "included": {
+          "title": "Was ist enthalten:",
+          "items": [
+            "Wertschätzendes und würdevolles Trauergespräch, vorzugsweise bei Ihnen als Hausbesuch",
+            "Respektvoller, sensibler und vertraulicher Umgang mit der Lebensgeschichte",
+            "Besprechung und Bestimmung von Musikwünschen und möglichen Ritualen",
+            "Ausarbeitung der individuellen Rede / Zeremonie",
+            "Besprechung und Abstimmung mit dem beauftragten Bestattungsunternehmen",
+            "Durchführung der Trauer- / Lebensfeier",
+            "Begleitung zum Grab",
+            "Letzte Worte an der Grabstelle"
+          ]
+        },
+        "priceNote": "* Preis inkl. 19% USt., zzgl. Fahrtkostenpauschale: 30€ bis 30 km, darüber 0,40€/km"
+      }
+    },
+    {
+      "id": "ablauf-trauerfeier",
+      "icon": "fa-list-check",
+      "title": "Ablauf einer Trauerfeier",
+      "toggleText": "Wie es abläuft",
+      "content": {
+        "intro": "Eine Trauerfeier kann sehr individuell gestaltet werden. Hier ein Beispiel, wie eine würdevolle Zeremonie ablaufen könnte:",
+        "sections": [
+          {
+            "title": "Vorbereitung & Trauergespräch",
+            "text": "In einem wertschätzenden und würdevollen Trauergespräch, vorzugsweise bei Ihnen als Hausbesuch, lerne ich den verstorbenen Menschen durch Ihre Erzählungen kennen."
+          },
+          {
+            "title": "Die Zeremonie",
+            "items": [
+              "Begrüßung der Trauergäste",
+              "Einführende Worte zum Leben des Verstorbenen",
+              "Die persönliche Rede - eine Hommage an das Leben",
+              "Musikstücke nach Ihren Wünschen",
+              "Mögliche Rituale (z.B. Kerzen anzünden, Blumen niederlegen)",
+              "Raum für stille Trauer und Erinnerung",
+              "Verabschiedung"
+            ]
+          },
+          {
+            "title": "Begleitung zum Grab",
+            "text": "Wenn gewünscht, begleite ich Sie und die Trauergäste zum Grab und spreche dort die letzten Worte."
+          },
+          {
+            "title": "Grabstelle",
+            "text": "Letzte Worte an der Grabstelle, während die Trauergäste Abschied nehmen können."
+          }
+        ]
+      }
+    },
+    {
+      "id": "mein-versprechen",
+      "icon": "fa-hands-holding-heart",
+      "title": "Mein Versprechen an Sie",
+      "toggleText": "Was mir wichtig ist",
+      "content": {
+        "values": [
+          {
+            "icon": "fa-heart",
+            "title": "Würdevoll",
+            "text": "Jeder Moment des Lebens verdient es, würdevoll betrachtet zu werden"
+          },
+          {
+            "icon": "fa-hand-holding-heart",
+            "title": "Einfühlsam",
+            "text": "Ich führe Sie durch diese schweren Stunden mit Empathie und Fürsorge"
+          },
+          {
+            "icon": "fa-shield-heart",
+            "title": "Vertraulich",
+            "text": "Respektvoller und sensibler Umgang mit der Lebensgeschichte"
+          },
+          {
+            "icon": "fa-comments",
+            "title": "Persönlich",
+            "text": "Jede Rede ist einzigartig und spiegelt das individuelle Leben wider"
+          },
+          {
+            "icon": "fa-lightbulb",
+            "title": "Tröstend",
+            "text": "Ich möchte Ihnen Trost und Hoffnung schenken"
+          },
+          {
+            "icon": "fa-book-heart",
+            "title": "Lebensfeier",
+            "text": "Eine Rede über das Leben - nicht nur über die Trauer"
+          }
+        ],
+        "closing": "Ich würde mich sehr freuen, wenn Sie mir dieses Vertrauen schenken, dass ich Sie auch bei diesem letzten Abschnitt auf dem Weg begleiten darf."
+      }
+    }
+  ],
+  "cta": {
+    "title": "Ich bin für Sie da",
+    "subtitle": "Bitte rufen Sie mich gerne an und wir schauen gemeinsam nach einem Termin zum persönlichen Gespräch.",
+    "buttonText": "Jetzt Kontakt aufnehmen",
+    "buttonIcon": "fa-phone",
+    "phone": "0178 1873022"
+  }
+}
