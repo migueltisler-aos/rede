@@ -3,33 +3,43 @@
  * Handles wedding/memorial theme switching
  */
 
+function initPathSelection() {
+    // Listen to path selection clicks
+    document.addEventListener('click', function(e) {
+        const pathBtn = e.target.closest('.path-btn');
+        if (!pathBtn) return;
+
+        // Determine path type from classes
+        const isWedding = pathBtn.classList.contains('wedding-path');
+        const isMemorial = pathBtn.classList.contains('memorial-path');
+
+        if (isWedding || isMemorial) {
+            const body = document.body;
+
+            // Remove existing theme classes
+            body.classList.remove('wedding-theme', 'memorial-theme');
+
+            // Add new theme class
+            if (isWedding) {
+                body.classList.add('wedding-theme');
+            } else if (isMemorial) {
+                body.classList.add('memorial-theme');
+            }
+
+            // Let the default anchor behavior handle scrolling
+            // The href="#services-wedding" or href="#services-memorial" will work automatically
+        }
+    });
+}
+
+// Legacy function for backward compatibility
 function selectPath(pathType) {
     const body = document.body;
-
-    // Remove existing theme classes
     body.classList.remove('wedding-theme', 'memorial-theme');
 
-    // Add new theme class
     if (pathType === 'wedding') {
         body.classList.add('wedding-theme');
-
-        // Scroll to wedding services section
-        setTimeout(() => {
-            const servicesSection = document.getElementById('services-wedding');
-            if (servicesSection) {
-                servicesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-        }, 300);
-
     } else if (pathType === 'memorial') {
         body.classList.add('memorial-theme');
-
-        // Scroll to memorial services section
-        setTimeout(() => {
-            const servicesSection = document.getElementById('services-memorial');
-            if (servicesSection) {
-                servicesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-        }, 300);
     }
 }

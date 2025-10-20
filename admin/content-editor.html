@@ -1,104 +1,10 @@
-<!DOCTYPE html>
+ja und d<!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Content Editor - Geschichten-Atelier</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        /* Login Screen Styles */
-        .login-screen {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 9999;
-        }
-
-        .login-screen.hidden {
-            display: none;
-        }
-
-        .login-box {
-            background: white;
-            padding: 50px;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-            text-align: center;
-            max-width: 400px;
-            width: 90%;
-        }
-
-        .login-box h2 {
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        .login-box p {
-            color: #666;
-            margin-bottom: 30px;
-        }
-
-        .login-box input[type="password"] {
-            width: 100%;
-            padding: 15px 20px;
-            border: 2px solid #e0e0e0;
-            border-radius: 10px;
-            font-size: 16px;
-            margin-bottom: 20px;
-            transition: border-color 0.3s ease;
-        }
-
-        .login-box input[type="password"]:focus {
-            outline: none;
-            border-color: #667eea;
-        }
-
-        .login-box .btn-login {
-            width: 100%;
-            padding: 15px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border: none;
-            border-radius: 10px;
-            font-size: 16px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-
-        .login-box .btn-login:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
-        }
-
-        .login-error {
-            background: #ffebee;
-            color: #c62828;
-            padding: 10px 15px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            display: none;
-        }
-
-        .login-error.show {
-            display: block;
-        }
-
-        .main-content {
-            display: none;
-        }
-
-        .main-content.unlocked {
-            display: block;
-        }
-
-    </style>
     <style>
         * {
             margin: 0;
@@ -335,34 +241,6 @@
     </style>
 </head>
 <body>
-    <!-- Login Screen -->
-    <div class="login-screen" id="loginScreen">
-        <div class="login-box">
-            <h2><i class="fas fa-lock"></i> Geschützter Bereich</h2>
-            <p>Bitte geben Sie das Passwort ein</p>
-
-            <div class="login-error" id="loginError">
-                <i class="fas fa-exclamation-triangle"></i>
-                Falsches Passwort. Bitte versuchen Sie es erneut.
-            </div>
-
-            <form id="loginForm" onsubmit="return checkPassword(event)">
-                <input
-                    type="password"
-                    id="passwordInput"
-                    placeholder="Passwort eingeben"
-                    autocomplete="off"
-                    required
-                >
-                <button type="submit" class="btn-login">
-                    <i class="fas fa-sign-in-alt"></i> Anmelden
-                </button>
-            </form>
-        </div>
-    </div>
-
-    <!-- Main Content -->
-    <div class="main-content" id="mainContent">
     <div class="container">
         <div class="header">
             <h1><i class="fas fa-edit"></i> Content Editor</h1>
@@ -396,6 +274,10 @@
                         <i class="fas fa-dove"></i>
                         <span>Trauerfeiern</span>
                     </li>
+                    <li class="file-item" data-file="contact">
+                        <i class="fas fa-envelope"></i>
+                        <span>Kontakt</span>
+                    </li>
                 </ul>
             </div>
 
@@ -404,56 +286,7 @@
             </div>
         </div>
     </div>
-    </div>
 
-    <script>
-        // Password check
-        const CORRECT_PASSWORD = 'unendlicheGeschichte';
-
-        function checkPassword(event) {
-            event.preventDefault();
-
-            const password = document.getElementById('passwordInput').value;
-            const loginError = document.getElementById('loginError');
-            const loginScreen = document.getElementById('loginScreen');
-            const mainContent = document.getElementById('mainContent');
-
-            if (password === CORRECT_PASSWORD) {
-                // Correct password
-                loginScreen.classList.add('hidden');
-                mainContent.classList.add('unlocked');
-
-                // Store session
-                sessionStorage.setItem('editorUnlocked', 'true');
-
-                // Clear password field
-                document.getElementById('passwordInput').value = '';
-            } else {
-                // Wrong password
-                loginError.classList.add('show');
-                document.getElementById('passwordInput').value = '';
-                document.getElementById('passwordInput').focus();
-
-                // Hide error after 3 seconds
-                setTimeout(() => {
-                    loginError.classList.remove('show');
-                }, 3000);
-            }
-
-            return false;
-        }
-
-        // Check if already unlocked in this session
-        window.addEventListener('DOMContentLoaded', () => {
-            if (sessionStorage.getItem('editorUnlocked') === 'true') {
-                document.getElementById('loginScreen').classList.add('hidden');
-                document.getElementById('mainContent').classList.add('unlocked');
-            }
-
-            // Focus password field
-            document.getElementById('passwordInput').focus();
-        });
-    </script>
     <script src="content-editor.js"></script>
 </body>
 </html>

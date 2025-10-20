@@ -442,6 +442,89 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
     font-weight: 600;
 }
 
+/* Mini Accordion (in Hero Tab) */
+.mini-accordion-toggle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0 0;
+    background: linear-gradient(135deg, var(--current-lightest) 0%, rgba(255,255,255,0.5) 100%);
+    border: 2px solid var(--current-light);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--current);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mini-accordion-toggle:hover {
+    background: linear-gradient(135deg, var(--current-light) 0%, var(--current-lightest) 100%);
+    border-color: var(--current);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.mini-accordion-toggle i {
+    transition: transform 0.3s ease;
+    font-size: 0.875rem;
+}
+
+.mini-accordion-toggle.active i {
+    transform: rotate(180deg);
+}
+
+.mini-accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease, margin-top 0.4s ease;
+    opacity: 0;
+}
+
+.mini-accordion-content.active {
+    max-height: 2000px;
+    opacity: 1;
+    margin-top: 1.5rem;
+}
+
+.mini-accordion-content h4 {
+    font-size: 1.125rem;
+    color: var(--text-dark);
+    margin: 1.5rem 0 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mini-accordion-content p {
+    color: var(--text-medium);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.facts-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.facts-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--current-lightest);
+    color: var(--text-medium);
+    line-height: 1.6;
+}
+
+.facts-list li:last-child {
+    border-bottom: none;
+}
+
+.facts-list li strong {
+    color: var(--current);
+    font-weight: 600;
+}
+
 /* Process Steps */
 .process-steps {
     display: flex;
@@ -506,6 +589,8 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
 }
 
 .path-btn {
+    display: block;
+    text-decoration: none;
     background: white;
     border: 2px solid var(--current-lighter);
     border-radius: 16px;
@@ -697,16 +782,9 @@ section {
 /* ============================================
    SERVICES - CLEAN WITH ACCORDIONS
    ============================================ */
+/* Services sections are always visible */
 .wedding-section,
 .memorial-section {
-    display: none;
-}
-
-body:not(.memorial-theme) .wedding-section {
-    display: block;
-}
-
-body.memorial-theme .memorial-section {
     display: block;
 }
 
@@ -820,11 +898,12 @@ body.memorial-theme .memorial-section {
 .accordion-content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1), padding 0.6s ease;
+    padding: 0;
 }
 
 .accordion-content.active {
-    max-height: 600px;
+    max-height: 3000px;
     padding: 1.5rem 0;
 }
 

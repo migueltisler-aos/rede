@@ -77,6 +77,7 @@ function initializeApp() {
     if (typeof initNavigation === 'function') initNavigation();
     if (typeof initTabs === 'function') initTabs();
     if (typeof initAccordion === 'function') initAccordion();
+    if (typeof initPathSelection === 'function') initPathSelection();
     if (typeof initContactForm === 'function') initContactForm();
     if (typeof initScrollAnimations === 'function') initScrollAnimations();
 }

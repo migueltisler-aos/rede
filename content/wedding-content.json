@@ -55,7 +55,7 @@
           {
             "number": 3,
             "title": "Vertrag & Reservierung",
-            "text": "Wenn ihr mir euer erstes „JA" gegeben habt, reserviere ich euren Termin. Vertrag und Anzahlung folgen."
+            "text": "Wenn ihr mir euer erstes JA gegeben habt, reserviere ich euren Termin. Vertrag und Anzahlung folgen."
           },
           {
             "number": 4,
@@ -81,7 +81,7 @@
       "title": "Beispiel-Ablauf",
       "toggleText": "So könnte Eure Trauung ablaufen",
       "content": {
-        "intro": "Wie der Name „Freie Trauung" schon sagt, ist die Gestaltung völlig frei und individuell möglich. Es gibt keine Vorgaben oder Vorschriften. Hier ein Beispiel wie es sein könnte:",
+        "intro": "Wie der Name 'Freie Trauung' schon sagt, ist die Gestaltung völlig frei und individuell möglich. Es gibt keine Vorgaben oder Vorschriften. Hier ein Beispiel wie es sein könnte:",
         "sections": [
           {
             "title": "Vorbereitung (1 Stunde vor Beginn)",
@@ -113,7 +113,7 @@
               { "icon": "fa-music", "text": "Besonderes Lied (optional)" },
               { "icon": "fa-hands-holding-heart", "text": "Rituale (Ringsegnung, Sandritual, etc.)" },
               { "icon": "fa-heart", "text": "Eheversprechen" },
-              { "icon": "fa-question", "text": "Traufrage: „JA - ICH WILL"" },
+              { "icon": "fa-question", "text": "Traufrage: JA - ICH WILL" },
               { "icon": "fa-ring", "text": "Ringtausch" },
               { "icon": "fa-kiss", "text": "Der ersehnte Kuss" },
               { "icon": "fa-signature", "text": "Trauurkunde unterzeichnen" }

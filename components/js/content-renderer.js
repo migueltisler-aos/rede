@@ -111,20 +111,6 @@ class ContentRenderer {
                 </div>
             </div>
 
-            <!-- Path Selection -->
-            <div class="path-selection">
-                <h3>${data.pathSelection.title}</h3>
-                <div class="path-buttons">
-                    ${data.pathSelection.paths.map(path => `
-                        <button class="path-btn ${path.type}-path" onclick="selectPath('${path.type}')">
-                            <i class="fas ${path.icon}"></i>
-                            <span>${path.title}</span>
-                            <p>${path.subtitle}</p>
-                        </button>
-                    `).join('')}
-                </div>
-            </div>
-
             <!-- Audio Sample -->
             <div class="audio-sample">
                 <h4><i class="fas ${data.audioSample.icon}"></i> ${data.audioSample.title}</h4>
@@ -132,6 +118,20 @@ class ContentRenderer {
                     <source src="${data.audioSample.audioFile}" type="audio/mpeg">
                     ${data.audioSample.fallbackText}
                 </audio>
+            </div>
+
+            <!-- Path Selection -->
+            <div class="path-selection">
+                <h3>${data.pathSelection.title}</h3>
+                <div class="path-buttons">
+                    ${data.pathSelection.paths.map(path => `
+                        <a href="#services-${path.type}" class="path-btn ${path.type}-path">
+                            <i class="fas ${path.icon}"></i>
+                            <span>${path.title}</span>
+                            <p>${path.subtitle}</p>
+                        </a>
+                    `).join('')}
+                </div>
             </div>
         </div>
         <div class="hero-image">
@@ -195,7 +195,11 @@ class ContentRenderer {
         `;
 
         if (service.content.intro) {
-            html += service.content.intro.map(p => `<p>${p}</p>`).join('');
+            if (Array.isArray(service.content.intro)) {
+                html += service.content.intro.map(p => `<p>${p}</p>`).join('');
+            } else {
+                html += `<p>${service.content.intro}</p>`;
+            }
         }
 
         if (service.content.approach) {
@@ -321,7 +325,11 @@ class ContentRenderer {
 
         // Render service content based on type
         if (service.content.intro) {
-            html += service.content.intro.map(p => `<p>${p}</p>`).join('');
+            if (Array.isArray(service.content.intro)) {
+                html += service.content.intro.map(p => `<p>${p}</p>`).join('');
+            } else {
+                html += `<p>${service.content.intro}</p>`;
+            }
         }
 
         if (service.content.included) {

@@ -1,19 +1,24 @@
 /**
  * Accordion Module
  * Handles expandable service details
+ * Uses event delegation to work with dynamically loaded content
  */
 
 function initAccordion() {
-    // Regular accordions
-    const accordionToggles = document.querySelectorAll('.accordion-toggle');
+    // Use event delegation on document for dynamically loaded accordions
+    document.addEventListener('click', function(e) {
+        // Check if click is on accordion toggle
+        const accordionToggle = e.target.closest('.accordion-toggle');
+        const miniToggle = e.target.closest('.mini-accordion-toggle');
 
-    accordionToggles.forEach(toggle => {
-        toggle.addEventListener('click', function() {
-            const content = this.nextElementSibling;
-            const isActive = content.classList.contains('active');
+        // Handle regular accordions
+        if (accordionToggle) {
+            e.preventDefault();
+            const content = accordionToggle.nextElementSibling;
+            const isActive = content && content.classList.contains('active');
 
             // Close all accordions in the same section
-            const section = this.closest('.services');
+            const section = accordionToggle.closest('.services');
             if (section) {
                 section.querySelectorAll('.accordion-content').forEach(item => {
                     item.classList.remove('active');
@@ -24,29 +29,26 @@ function initAccordion() {
             }
 
             // Toggle clicked accordion
-            if (!isActive) {
+            if (!isActive && content) {
                 content.classList.add('active');
-                this.classList.add('active');
+                accordionToggle.classList.add('active');
             }
-        });
-    });
+        }
 
-    // Mini accordions (for hero section)
-    const miniToggles = document.querySelectorAll('.mini-accordion-toggle');
-
-    miniToggles.forEach(toggle => {
-        toggle.addEventListener('click', function() {
-            const content = this.nextElementSibling;
-            const isActive = content.classList.contains('active');
+        // Handle mini accordions
+        if (miniToggle) {
+            e.preventDefault();
+            const content = miniToggle.nextElementSibling;
+            const isActive = content && content.classList.contains('active');
 
             // Toggle current accordion
             if (isActive) {
                 content.classList.remove('active');
-                this.classList.remove('active');
-            } else {
+                miniToggle.classList.remove('active');
+            } else if (content) {
                 content.classList.add('active');
-                this.classList.add('active');
+                miniToggle.classList.add('active');
             }
-        });
+        }
     });
 }

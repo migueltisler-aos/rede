@@ -41,3 +41,4 @@ StartseiteEs gibt mehrere Möglichkeiten mich zu kontaktieren.Mein NetzwerkAls f
 
 
 StartseiteDatenschutzerklärung - Allgemeiner Hinweis und PflichtinformationenDie verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:Marion ZwochÜber diese Seiten werden keinerlei personenbezogenen Daten (z.B. Namen, Kontaktdaten o. Ä.) gespeichert.Server-Log-DateienIn Server-Log-Dateien erhebt und speichert der Provider der Website automatisch Informationen, die Ihr Browser automatisch an uns übermittelt. Dies sind:•Besuchte Seite auf unserer Domain•Datum und Uhrzeit der Serveranfrage•Browsertyp und Browserversion•Verwendetes Betriebssystem•Referrer URL•Hostname des zugreifenden Rechners•IP-AdresseEs findet keine Zusammenführung dieser Daten mit anderen Datenquellen statt. Grundlage der Datenverarbeitung bildet Art. 6 Abs. 1 lit. b DSGVO, der die Verarbeitung von Daten zur Erfüllung eines Vertrags oder vorvertraglicher Maßnahmen gestattet.
+
