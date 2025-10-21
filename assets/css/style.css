@@ -782,10 +782,24 @@ section {
 /* ============================================
    SERVICES - CLEAN WITH ACCORDIONS
    ============================================ */
-/* Services sections are always visible */
+/* Services sections - hidden by default */
 .wedding-section,
 .memorial-section {
+    display: none;
+}
+
+/* Show wedding section by default or when wedding theme is active */
+body:not(.memorial-theme) .wedding-section {
     display: block;
+}
+
+/* Show memorial section only when memorial theme is active */
+body.memorial-theme .memorial-section {
+    display: block;
+}
+
+body.memorial-theme .wedding-section {
+    display: none;
 }
 
 .intro-text {
