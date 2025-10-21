@@ -53,7 +53,6 @@ async function loadAllComponents() {
     const components = [
         { path: 'components/html/navigation.html', target: 'nav-component' },
         { path: null, target: 'hero-component', contentFile: 'hero' }, // JSON-based
-        { path: 'components/html/about.html', target: 'about-component' },
         { path: null, target: 'services-wedding-component', contentFile: 'wedding' }, // JSON-based
         { path: null, target: 'services-memorial-component', contentFile: 'memorial' }, // JSON-based
         { path: 'components/html/instagram-feed.html', target: 'instagram-component' },
